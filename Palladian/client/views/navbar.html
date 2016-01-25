@@ -1,0 +1,32 @@
+<template name="Navbar">
+  <nav class="navbar">
+    <ul>
+      <li><a href="/services">Explore Your Journey</a></li>
+      {{#dropdownTrigger name="services"}}
+        <li><a>Services</a></li>
+      {{/dropdownTrigger}}
+      <li><a href="/reservation">Reservation</a></li>
+      <li><a href="contact">Contact Us</a></li>
+    </ul>
+  </nav>
+  <nav class="check-avail">
+    <ul>
+      <li>Call (123) 456- 7890 or </li>
+      <li><a href="availability">Check Availability</a></li>
+    </ul>
+  </nav>
+  <div class="dropdown-menu">
+    {{#dropdown name="services"}}
+      <table class="buttons">
+        <tr>
+          <td><button type="button">Massages</button></td>
+          <td><button type="button">Hair</button></td>
+          <td><button type="button">Waxing</button></td>
+          <td><button type="button">Sunless Tanning</button></td>
+          <td><button type="button">Skin Care</button></td>
+          <td><button type="button">Nail</button></td>
+        </tr>
+      </table>
+      {{/dropdown}}
+  </div>
+</template>

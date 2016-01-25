@@ -1,4 +1,4 @@
-Template.application.helpers({
+Template.Application.helpers({
   firstName: function(){
     var users = Meteor.users.find({}, { fields: {emails: 1} }).fetch();
     console.log(currentUser)

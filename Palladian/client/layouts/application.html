@@ -1,18 +1,23 @@
-<template name="application">
-  <div class="navbar-main">
-    <div class="title">
-      <h1>Palladian</h1>
+<template name="Application">
+  <header>
+  <title>Palladian</title>
+  </header>
+  <div id="wrapper">
+    <div class="navbar-main" id="header">
+      <div class="title">
+        <h1><a href="/">Palladian Day Spa</a></h1>
+      </div>
+
+      {{> Navbar}}
+
     </div>
-    <nav class="navbar">
-      <ul>
-      {{#if currentUser}}
-        <li>{{firstName}}</li>
-        <li>You are logged in!</li>
-      {{else}}
-        <li>{{> register}}</li>
-        <li>{{> login}}</li>
-      {{/if}}
-      </ul>
-    </nav>
+
+    <div id="content">
+      {{> yield}}
+    </div>
   </div>
+
+    <div id="footer">
+      {{> Footer}}
+    </div>
 </template>

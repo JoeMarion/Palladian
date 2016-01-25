@@ -1,4 +1,4 @@
-Template.register.events({
+Template.Register.events({
   'submit form': function(e) {
     event.preventDefault();
     var firstnameVar = e.target.firstName.value;
