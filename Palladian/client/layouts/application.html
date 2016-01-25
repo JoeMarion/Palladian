@@ -1,0 +1,18 @@
+<template name="application">
+  <div class="navbar-main">
+    <div class="title">
+      <h1>Palladian</h1>
+    </div>
+    <nav class="navbar">
+      <ul>
+      {{#if currentUser}}
+        <li>{{firstName}}</li>
+        <li>You are logged in!</li>
+      {{else}}
+        <li>{{> register}}</li>
+        <li>{{> login}}</li>
+      {{/if}}
+      </ul>
+    </nav>
+  </div>
+</template>

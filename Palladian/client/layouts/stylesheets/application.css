@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+}
+
+.navbar-main {
+  background-color: rgba(0,0,0,.5);
+  width: 100%;
+  min-width: 850px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  border-bottom: 1px solid rgba(255,255,255,.5);
+  color: white;
+}
+
+.title {
+  float: left;
+  margin: 1em 1em;
+}
+
+.navbar {
+  float: right;
+  padding: 0.5em;
+}
+
+.navbar li {
+  margin: 0.5em;
+}
