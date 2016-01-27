@@ -1,0 +1,20 @@
+.massage-header {
+  height: 25em;
+  background: tan;
+}
+
+.massage-prices {
+  display: inline;
+}
+
+.massage-prices img {
+  height: 20em;
+  width: 50%;
+  float: right;
+}
+
+.pricing div {
+  height: 20em;
+  width: 50%;
+}
+

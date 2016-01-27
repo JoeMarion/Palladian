@@ -2,10 +2,12 @@
   <nav class="navbar">
     <ul>
       <li><a href="/services">Explore Your Journey</a></li>
-      {{#dropdownTrigger name="services"}}
-        <li><a>Services</a></li>
+      {{#dropdownTrigger name="spa-services"}}
+        <li><a>Spa Services</a></li>
       {{/dropdownTrigger}}
-      <li><a href="/reservation">Reservation</a></li>
+      {{#dropdownTrigger name="salon-services"}}
+        <li><a>Salon Services</a></li>
+      {{/dropdownTrigger}}
       <li><a href="contact">Contact Us</a></li>
     </ul>
   </nav>
@@ -16,10 +18,20 @@
     </ul>
   </nav>
   <div class="dropdown-menu">
-    {{#dropdown name="services"}}
+  {{#dropdown name="spa-services"}}
       <table class="buttons">
         <tr>
-          <td><button type="button">Massages</button></td>
+          <td><button type="button">Relaxation</button></td>
+          <td><button type="button">Hot Stone</button></td>
+          <td><button type="button">Couples</button></td>
+          <td><button type="button">Deep Tissue</button></td>
+          <td><button type="button">Prenatal</button></td>
+        </tr>
+      </table>
+      {{/dropdown}}
+    {{#dropdown name="salon-services"}}
+      <table class="buttons">
+        <tr>
           <td><button type="button">Hair</button></td>
           <td><button type="button">Waxing</button></td>
           <td><button type="button">Sunless Tanning</button></td>
