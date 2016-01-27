@@ -33,3 +33,7 @@ Router.route('/skincare/', function() {
 Router.route('/nails/', function() {
   this.render ('Nails')
 });
+
+Router.route('/availability', function() {
+  this.render ('Availability')
+});

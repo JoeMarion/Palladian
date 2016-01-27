@@ -22,3 +22,5 @@ accounts-password
 iron:router
 fortawesome:fontawesome
 lookback:dropdowns
+rzymek:fullcalendar
+mrt:fullcalendar
